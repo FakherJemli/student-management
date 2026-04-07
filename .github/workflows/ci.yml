@@ -13,7 +13,5 @@ jobs:
         with:
           java-version: '17'
           distribution: temurin
-      - name: Build
+      - name: Build and Package
         run: mvn -B -DskipTests package
-      - name: Package
-        run: mvn -B package
